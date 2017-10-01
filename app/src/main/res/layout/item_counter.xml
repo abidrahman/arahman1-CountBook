@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/counter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/counter_comment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/counter_value"
+        android:layout_toLeftOf="@+id/counter_value"
+        android:fontFamily="monospace"
+        android:text="Hello"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/counter_edit"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:layout_above="@+id/counter_reset"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/btn_dialog"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="monospace"
+        android:text="Edit"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/counter_up"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@android:drawable/arrow_up_float"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="0dp"
+        android:fontFamily="monospace"
+        android:padding="0dp"
+        android:textSize="24sp"
+        android:layout_toLeftOf="@+id/counter_edit"
+        android:layout_toStartOf="@+id/counter_edit" />
+
+    <Button
+        android:id="@+id/counter_down"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@android:drawable/arrow_down_float"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="monospace"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/counter_value"
+        android:layout_toEndOf="@+id/counter_value"
+        android:layout_alignBottom="@+id/counter_value" />
+
+    <TextView
+        android:id="@+id/counter_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/counter_value"
+        android:layout_toLeftOf="@+id/counter_value"
+        android:fontFamily="monospace"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/counter_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/counter_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="monospace"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/counter_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="end"
+        android:text="540"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/counter_up"
+        android:layout_toStartOf="@+id/counter_up" />
+
+    <Button
+        android:id="@+id/counter_reset"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/counter_value"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/counter_up"
+        android:background="@android:drawable/btn_dialog"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="monospace"
+        android:text="Reset"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
