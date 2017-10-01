@@ -61,7 +61,7 @@ public class CounterAdapter extends ArrayAdapter<Counter> {
      */
     @Override
     public View getView(int position, View converView, ViewGroup parent) {
-        View counterView = converView;
+        View counterView;
 
         //Get an instance of the item counter view elements
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
